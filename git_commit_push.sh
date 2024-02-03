@@ -5,9 +5,9 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Add assets to the project
+feat: Add design elements and options
 
-Include necessary assets in the project to enhance the visual components and user experience.
+Integrate design elements such as shapes, navigation icons, font options, alignment choices, and keyboard shortcuts to enhance the user interface and functionality.
 
 "
 # Push changes to the remote repository

@@ -5,9 +5,9 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Add design elements and options
+feat: Define TypeScript interfaces and types for various components and functionalities
 
-Integrate design elements such as shapes, navigation icons, font options, alignment choices, and keyboard shortcuts to enhance the user interface and functionality.
+Introduce TypeScript interfaces and types for managing cursor state, reactions, shape data, attributes, active elements, fabric objects, and various props across different components.
 
 "
 # Push changes to the remote repository

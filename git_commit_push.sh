@@ -5,9 +5,9 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-style: Add Work Sans font configuration
+feat: Integrate Room component in RootLayout
 
-Introduce the Work Sans font with specified subsets, variable, and weight options in the project.
+Add Room component to the RootLayout for realtime collaboration using Liveblocks in the Figma Clone project. Updated metadata to reflect changes in the project description.
 
 "
 # Push changes to the remote repository

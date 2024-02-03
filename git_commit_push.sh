@@ -5,9 +5,9 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Integrate Room component in RootLayout
+feat: Add assets to the project
 
-Add Room component to the RootLayout for realtime collaboration using Liveblocks in the Figma Clone project. Updated metadata to reflect changes in the project description.
+Include necessary assets in the project to enhance the visual components and user experience.
 
 "
 # Push changes to the remote repository

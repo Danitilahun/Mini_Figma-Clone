@@ -5,9 +5,9 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Implement CursorChat component for real-time collaboration
+feat: Add keyboard event listeners to manage cursor state
 
-This commit introduces the CursorChat component, which allows users to interact with their cursor in chat mode during real-time collaboration sessions. The component displays a custom cursor shape and an input field for users to type messages. It utilizes the updateMyPresence function to broadcast the user's message to other participants in the collaboration session. Additionally, it handles keyboard events such as Enter and Escape keys for message submission and mode changes. When a user submits a message, the previous message is displayed above the input field for context. This component enhances the collaborative editing experience by providing a chat interface directly within the canvas.
+This commit adds event listeners for keyboard events to the component, allowing users to trigger changes in the cursor state. When the '/' key is pressed, the cursor enters chat mode, enabling users to type messages. Pressing the 'Escape' key hides the cursor and clears any existing message. Additionally, pressing the 'e' key activates the reaction selector mode, enabling users to select reactions. These keyboard shortcuts enhance user interaction and provide convenient ways to switch bet
 
 "
 # Push changes to the remote repository

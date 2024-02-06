@@ -5,9 +5,9 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Implement Live component for real-time collaboration
+feat: Implement CursorChat component for real-time collaboration
 
-This commit introduces the Live component, which facilitates real-time collaboration by providing a canvas for users to interact with cursors. The component utilizes the useMyPresence and useOthers hooks from the liveblocks.config module to manage user presence and subscription to other users' data. It captures mouse events to update the user's cursor position and broadcasts it to other users. Additionally, it includes event handlers to show and hide the cursor when the mouse enters or leaves the canvas. This component enhances the collaborative experience by providing real-time visual feedback of other users' cursor positions.
+This commit introduces the CursorChat component, which allows users to interact with their cursor in chat mode during real-time collaboration sessions. The component displays a custom cursor shape and an input field for users to type messages. It utilizes the updateMyPresence function to broadcast the user's message to other participants in the collaboration session. Additionally, it handles keyboard events such as Enter and Escape keys for message submission and mode changes. When a user submits a message, the previous message is displayed above the input field for context. This component enhances the collaborative editing experience by providing a chat interface directly within the canvas.
 
 "
 # Push changes to the remote repository

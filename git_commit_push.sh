@@ -5,7 +5,7 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: adding public folder
+feat: center the text
 "
 # Push changes to the remote repository
 git push origin HEAD

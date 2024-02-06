@@ -5,7 +5,7 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: center the text
+feat: start live component preparation
 "
 # Push changes to the remote repository
 git push origin HEAD

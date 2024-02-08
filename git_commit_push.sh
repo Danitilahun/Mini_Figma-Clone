@@ -5,13 +5,13 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Listen for reaction events and update reactions accordingly
+feat: Add CSS animations for reaction movement and appearance
 
-- Implemented useEventListener hook to listen for reaction events.
-- Added logic to update reactions based on received reaction event data.
-- Updated reaction data with event coordinates, value, and timestamp.
+- Created CSS animations for reaction movement and appearance.
+- Implemented animation keyframes for reactions to go up, fade out, and move left/right.
+- Defined animation durations, timings, and transformations for smooth visual effects.
 
-This commit enhances the Live component by adding a listener for reaction events, enabling the application to react to user-generated reactions in real-time. The useEventListener hook is utilized to capture reaction events, and the reaction data is updated accordingly with event coordinates, value, and timestamp, ensuring synchronized reaction display across users.
+This commit introduces CSS animations to enhance the visual experience of reactions in the application. Various animation effects, including upward movement, fading out, and left/right movement, are defined through animation keyframes. These animations improve the aesthetics and interactivity of reactions, providing a more engaging user experience.
 
 "
 # Push changes to the remote repository

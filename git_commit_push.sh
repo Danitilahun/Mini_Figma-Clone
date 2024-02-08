@@ -5,13 +5,14 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Initialize Liveblocks room context and related hooks
+feat: Implement Color component for attribute selection
 
-- Created Liveblocks client instance with provided configuration.
-- Initialized Liveblocks room context and associated hooks for room management.
-- Implemented functions for resolving users and mention suggestions in the room context.
+- Created Color component for selecting color attributes.
+- Integrated input element with type 'color' for color selection.
+- Added handlers for input change events to update attribute values.
+- Styled the component for visual clarity and user interaction.
 
-This commit initializes the Liveblocks room context using the createRoomContext function. It sets up hooks for room management, user presence, storage, and thread management. Additionally, functions for resolving users and mention suggestions in the context of comments are implemented.
+This commit introduces the Color component, which allows users to select color attributes. It includes an input element of type 'color' for color selection and handles input change events to update attribute values accordingly. Additionally, the component is styled to enhance visual clarity and user interaction.
 
 "
 # Push changes to the remote repository

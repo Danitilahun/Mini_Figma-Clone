@@ -5,14 +5,14 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Add Text component with configurable font, font size, and font weight options
+feat: Implement LeftSidebar component for displaying layers
 
-- Created Text component to manage text-related configurations such as font, font size, and font weight.
-- Implemented Select component for each configuration option, allowing users to choose from predefined options.
-- Utilized RenderSelect function to dynamically render Select components based on configuration options.
-- Integrated handleInputChange function to manage input changes and update state accordingly.
+- Created LeftSidebar component to display layers with their respective icons and names.
+- Utilized useMemo hook to memoize the rendering of layers, optimizing performance by re-rendering only when there are new shapes.
+- Integrated getShapeInfo function to retrieve shape information such as icon and name.
+- Styled the component to provide a visually appealing and interactive user experience.
 
-This commit introduces the Text component, enabling users to customize text properties including font, font size, and font weight. It utilizes the Select component to provide selectable options for each property, offering a seamless configuration experience.
+This commit introduces the LeftSidebar component, which enhances the user interface by displaying layers along with their icons and names. It improves performance by efficiently rendering layers and ensures a better user experience in managing layers within the application.
 
 "
 # Push changes to the remote repository

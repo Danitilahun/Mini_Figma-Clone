@@ -5,15 +5,14 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Add PinnedThread component
+feat: Add PinnedComposer component
 
-- Implemented PinnedThread component for displaying pinned comments within a thread.
-- Integrated Liveblocks API to fetch thread data and manage thread state.
-- Utilized React useMemo hook to optimize performance by memoizing component content.
-- Enhanced user experience with draggable avatars and collapsible thread content.
-- Ensured proper event handling to focus threads and toggle minimization.
+- Implemented PinnedComposer component for composing new comments.
+- Integrated Liveblocks Composer component to enable comment creation/editing.
+- Enhanced user experience with draggable avatar and resizable composer.
+- Ensured proper event handling to submit comments and prevent propagation.
 
-This commit introduces the PinnedThread component, allowing users to view and interact with pinned comments within a thread. The component leverages Liveblocks API to fetch thread data and manage state, providing real-time updates. React useMemo hook is used to optimize performance by memoizing component content, preventing unnecessary re-renders. Features like draggable avatars and collapsible thread content enhance user experience, while proper event handling ensures smooth interaction.
+This commit introduces the PinnedComposer component, allowing users to compose new comments within a thread. The component utilizes the Liveblocks Composer component, providing functionality for creating and editing comments in real-time. Features like draggable avatar and resizable composer enhance user experience, while proper event handling ensures smooth interaction.
 
 "
 # Push changes to the remote repository

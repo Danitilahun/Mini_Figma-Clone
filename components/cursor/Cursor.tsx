@@ -1,23 +1,30 @@
 import CursorSVG from "@/public/assets/CursorSVG";
 
-type CursorProps = {
+type Props = {
+  color: string;
   x: number;
   y: number;
-  message: string;
-  color: string;
+  message?: string;
 };
 
-const Cursor = ({ x, y, message, color }: CursorProps) => {
-  // When you apply pointer-events-none to an element, it effectively disables all pointer events on that element
-  // and its children. This means that the element will not respond to mouse interactions such as clicks, hovers, or drags.
-  return (
-    <div
-      className="pointer-events-none absolute top-0 left-0"
-      style={{ transform: `translateX(${x}px) translateY(${y}px)` }}
-    >
-      <CursorSVG color={color} />
-    </div>
-  );
-};
+const Cursor = ({ color, x, y, message }: Props) => (
+  <div
+    className="pointer-events-none absolute left-0 top-0"
+    style={{ transform: `translateX(${x}px) translateY(${y}px)` }}
+  >
+    <CursorSVG color={color} />
+
+    {message && (
+      <div
+        className="absolute left-2 top-5 rounded-3xl px-4 py-2"
+        style={{ backgroundColor: color, borderRadius: 20 }}
+      >
+        <p className="whitespace-nowrap text-sm leading-relaxed text-white">
+          {message}
+        </p>
+      </div>
+    )}
+  </div>
+);
 
 export default Cursor;

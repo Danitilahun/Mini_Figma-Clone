@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import LiveCursors from "./cursor/LiveCursors";
 import { useMyPresence, useOthers } from "@/liveblocks.config";
 import { CursorMode, CursorState } from "@/types/type";
+import CursorChat from "./cursor/CursorChat";
 
 const Live = () => {
   // Extracts data from the list of other users currently in the same Room, and automatically
@@ -30,6 +31,9 @@ const Live = () => {
 
   // Hide the cursor when the mouse leaves the canvas
   const handlePointerLeave = useCallback(() => {
+    setCursorState({
+      mode: CursorMode.Hidden,
+    });
     updateMyPresence({
       cursor: null,
       message: null,
@@ -90,6 +94,16 @@ const Live = () => {
     >
       <h1 className="text-2xl text-white">LiveBlock figma Clone</h1>
       <LiveCursors others={others} />
+
+      {/* If cursor is in chat mode, show the chat cursor */}
+      {cursor && (
+        <CursorChat
+          cursor={cursor}
+          cursorState={cursorState}
+          setCursorState={setCursorState}
+          updateMyPresence={updateMyPresence}
+        />
+      )}
     </div>
   );
 };

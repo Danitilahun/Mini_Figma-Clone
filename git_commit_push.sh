@@ -5,14 +5,13 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Implement Color component for attribute selection
+feat: Implement Dimensions component for width and height input
 
-- Created Color component for selecting color attributes.
-- Integrated input element with type 'color' for color selection.
-- Added handlers for input change events to update attribute values.
-- Styled the component for visual clarity and user interaction.
+- Created Dimensions component for inputting width and height values.
+- Integrated Input component for numeric input with validation.
+- Added handlers for input change and blur events to update values and manage editing state.
 
-This commit introduces the Color component, which allows users to select color attributes. It includes an input element of type 'color' for color selection and handles input change events to update attribute values accordingly. Additionally, the component is styled to enhance visual clarity and user interaction.
+This commit introduces the Dimensions component, allowing users to input width and height values. It utilizes the Input component for numeric input with minimum value validation. Additionally, handlers for input change and blur events are implemented to update values and manage the editing state.
 
 "
 # Push changes to the remote repository

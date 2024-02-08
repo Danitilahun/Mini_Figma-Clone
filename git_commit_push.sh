@@ -5,14 +5,14 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Integrate Tooltip components with Radix UI
+feat: Implement Avatar component with Tooltip integration
 
-- Added TooltipProvider, Tooltip, TooltipTrigger, and TooltipContent components.
-- Utilized Radix UI's TooltipPrimitive components for tooltip functionality.
-- Implemented custom styles and animations for tooltips.
-- Enhanced accessibility and usability of tooltips.
+- Created Avatar component to display user avatars with tooltip functionality.
+- Utilized Tooltip, TooltipTrigger, and TooltipContent components from the UI library.
+- Integrated Next.js Image component for optimized image rendering.
+- Enhanced accessibility and user experience with tooltips displaying user names.
 
-This commit introduces Tooltip components integrated with Radix UI, providing tooltip functionality for enhanced user interactions. The TooltipProvider, Tooltip, TooltipTrigger, and TooltipContent components are added to facilitate tooltip usage. Custom styles and animations are applied to improve the visual appearance and behavior of tooltips, ensuring a seamless user experience.
+This commit introduces the Avatar component, which combines user avatars with tooltip functionality. The Avatar component utilizes Tooltip, TooltipTrigger, and TooltipContent components from the UI library to enable tooltips on avatar hover. Additionally, the Next.js Image component is employed for optimized image renderin
 
 "
 # Push changes to the remote repository

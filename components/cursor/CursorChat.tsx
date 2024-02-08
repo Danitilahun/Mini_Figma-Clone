@@ -51,12 +51,6 @@ const CursorChat = ({
               borderRadius: 20,
             }}
           >
-            {/**
-             * if there is a previous message, show it above the input
-             *
-             * We're doing this because when user press enter, we want to
-             * show the previous message at top and the input at bottom
-             */}
             {cursorState.previousMessage && (
               <div>{cursorState.previousMessage}</div>
             )}

@@ -10,12 +10,6 @@ const Room = ({ children }: { children: React.ReactNode }) => {
   return (
     <RoomProvider
       id="fig-room"
-      /**
-       * initialPresence is used to initialize the presence of the current
-       * user in the room.
-       *
-       * initialPresence: https://liveblocks.io/docs/api-reference/liveblocks-react#RoomProvider
-       */
       initialPresence={{ cursor: null, cursorColor: null, editingText: null }}
       /**
        * initialStorage is used to initialize the storage of the room.

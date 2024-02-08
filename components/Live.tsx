@@ -33,37 +33,14 @@ type Props = {
 };
 
 const Live = ({ canvasRef, undo, redo }: Props) => {
-  /**
-   * useOthers returns the list of other users in the room.
-   *
-   * useOthers: https://liveblocks.io/docs/api-reference/liveblocks-react#useOthers
-   */
   const others = useOthers();
-
-  /**
-   * useMyPresence returns the presence of the current user in the room.
-   * It also returns a function to update the presence of the current user.
-   *
-   * useMyPresence: https://liveblocks.io/docs/api-reference/liveblocks-react#useMyPresence
-   */
   const [{ cursor }, updateMyPresence] = useMyPresence() as any;
-
-  /**
-   * useBroadcastEvent is used to broadcast an event to all the other users in the room.
-   *
-   * useBroadcastEvent: https://liveblocks.io/docs/api-reference/liveblocks-react#useBroadcastEvent
-   */
   const broadcast = useBroadcastEvent();
-
-  // store the reactions created on mouse click
   const [reactions, setReactions] = useState<Reaction[]>([]);
-
-  // track the state of the cursor (hidden, chat, reaction, reaction selector)
   const [cursorState, setCursorState] = useState<CursorState>({
     mode: CursorMode.Hidden,
   });
 
-  // set the reaction of the cursor
   const setReaction = useCallback((reaction: string) => {
     setCursorState({ mode: CursorMode.Reaction, reaction, isPressed: false });
   }, []);
@@ -102,12 +79,6 @@ const Live = ({ canvasRef, undo, redo }: Props) => {
     }
   }, 100);
 
-  /**
-   * useEventListener is used to listen to events broadcasted by other
-   * users.
-   *
-   * useEventListener: https://liveblocks.io/docs/api-reference/liveblocks-react#useEventListener
-   */
   useEventListener((eventData) => {
     const event = eventData.event as ReactionEvent;
     setReactions((reactions) =>

@@ -5,14 +5,13 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Implement reaction selection functionality in Live component
+feat: Add FlyingReaction component for displaying flying reactions
 
-- Added setReaction function to set the reaction of the cursor.
-- Integrated ReactionSelector component to allow users to select reactions.
-- Enhanced mouse event handlers to handle reaction mode and cursor positioning.
-- Implemented logic to update cursor state based on user interaction.
+- Created FlyingReaction component to render flying reactions at specified coordinates.
+- Implemented dynamic styling using CSS modules for animation and appearance.
+- Enhanced component props to include position, timestamp, and value of the reaction.
 
-This commit enhances the Live component by adding functionality for users to select reactions for their cursor. The setReaction function sets the reaction of the cursor, and the ReactionSelector component enables users to choose from predefined reaction options. Additionally, mouse event handlers have been updated to manage reaction mode and cursor positioning, ensuring a smooth user experience.
+This commit introduces the FlyingReaction component, which is responsible for rendering flying reactions at specific coordinates on the screen. The component utilizes CSS modules for dynamic styling, enabling animations and visual effects. Additionally, the component's props include information such as position, timestamp, and value of the reaction, enhancing its functionality
 
 "
 # Push changes to the remote repository

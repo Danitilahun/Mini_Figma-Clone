@@ -5,14 +5,14 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Implement NewThreadCursor component for custom cursor display
+feat: Add NewThread component for creating new comments
 
-- Created NewThreadCursor component to display a custom cursor when placing a new thread.
-- Utilized Radix Portal to render the cursor outside of its parent component for proper positioning.
-- Improved user experience by dynamically updating cursor position based on mouse movement.
-- Ensured cursor visibility control with document element class manipulation.
+- Implemented NewThread component to enable users to create new comments.
+- Integrated Liveblocks Composer component for comment creation/editing.
+- Improved user experience with draggable composer and customizable cursor.
+- Ensured proper event handling and positioning for smooth interaction.
 
-This commit introduces the NewThreadCursor component, which displays a custom cursor when placing a new thread. The component utilizes Radix Portal to render the cursor outside of its parent component, ensuring proper positioning. User experience is enhanced with dynamic cursor position updates based on mouse movement. Additionally, cursor visibility is controlled through document element class manipulation for seamless interaction.
+This commit introduces the NewThread component, allowing users to create new comments within a thread. The component utilizes the Liveblocks Composer component for comment creation and editing. Features like draggable composer and customizable cursor enhance user experience, while proper event handling ensures smooth interaction and positioning of the composer.
 
 "
 # Push changes to the remote repository

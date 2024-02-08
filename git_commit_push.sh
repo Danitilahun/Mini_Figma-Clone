@@ -5,14 +5,15 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Implement RightSidebar component for design settings
+feat: Implement ShapesMenu component for handling shape selection
 
-- Created RightSidebar component to provide design settings for canvas elements.
-- Implemented functionality to modify shape attributes such as dimensions, text, color, and stroke.
-- Utilized useRef and useMemo hooks to optimize performance by memoizing content and managing input references.
-- Integrated functions for updating canvas elements and syncing changes with storage.
+- Created ShapesMenu component to manage shape selection and display options in a dropdown menu.
+- Integrated DropdownMenu, DropdownMenuTrigger, and DropdownMenuContent components for the dropdown functionality.
+- Implemented functionality to handle shape selection and trigger actions accordingly.
+- Utilized Button and Image components for rendering shape icons and names.
+- Added input element for uploading images with hidden visibility.
 
-This commit introduces the RightSidebar component, which enhances the user interface by providing design settings for canvas elements. Users can modify attributes such as dimensions, text properties, colors, and stroke settings conveniently. The component is designed with performance optimization in mind, ensuring efficient rendering and management of input references.
+This commit introduces the ShapesMenu component, which enhances the user interface by providing a dropdown menu for selecting shapes and their options. Users can easily navigate through available shapes and choose the desired ones. The component is designed with usability and flexibility in mind, offering intuitive interactions and seamless integration with other UI elements.
 
 "
 # Push changes to the remote repository

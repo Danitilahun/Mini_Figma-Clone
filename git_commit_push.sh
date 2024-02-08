@@ -5,14 +5,15 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Add Select component
+feat: Add PinnedThread component
 
-- Implemented Select component for creating customizable dropdown menus.
-- Integrated Radix UI primitives for consistent and accessible dropdown behavior.
-- Styled Select component with proper spacing, borders, and focus states.
-- Utilized React.forwardRef for seamless integration with other components.
+- Implemented PinnedThread component for displaying pinned comments within a thread.
+- Integrated Liveblocks API to fetch thread data and manage thread state.
+- Utilized React useMemo hook to optimize performance by memoizing component content.
+- Enhanced user experience with draggable avatars and collapsible thread content.
+- Ensured proper event handling to focus threads and toggle minimization.
 
-This commit introduces the Select component, providing a versatile dropdown menu solution. The component leverages Radix UI primitives to ensure consistent behavior and accessibility standards. Various elements like triggers, content, labels, items, and separators are included to support diverse use cases. Styling ensures clear visual cues for focus states and disabled states, enhancing user experience. React.forwardRef is used to maintain compatibility and flexibility when integrating with other components.
+This commit introduces the PinnedThread component, allowing users to view and interact with pinned comments within a thread. The component leverages Liveblocks API to fetch thread data and manage state, providing real-time updates. React useMemo hook is used to optimize performance by memoizing component content, preventing unnecessary re-renders. Features like draggable avatars and collapsible thread content enhance user experience, while proper event handling ensures smooth interaction.
 
 "
 # Push changes to the remote repository

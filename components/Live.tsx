@@ -4,6 +4,7 @@ import { useMyPresence, useOthers } from "@/liveblocks.config";
 import { CursorMode, CursorState, Reaction } from "@/types/type";
 import CursorChat from "./cursor/CursorChat";
 import ReactionSelector from "./reaction/ReactionButton";
+import FlyingReaction from "./reaction/FlyingReaction";
 
 const Live = () => {
   // Extracts data from the list of other users currently in the same Room, and automatically
@@ -137,6 +138,17 @@ const Live = () => {
           updateMyPresence={updateMyPresence}
         />
       )}
+
+      {/* Render the reactions */}
+      {reactions.map((reaction) => (
+        <FlyingReaction
+          key={reaction.timestamp.toString()}
+          x={reaction.point.x}
+          y={reaction.point.y}
+          timestamp={reaction.timestamp}
+          value={reaction.value}
+        />
+      ))}
 
       {/* If cursor is in reaction selector mode, show the reaction selector */}
       {cursorState.mode === CursorMode.ReactionSelector && (

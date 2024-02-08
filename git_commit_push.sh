@@ -5,14 +5,14 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Implement ActiveUsers component to display active users with avatars
+feat: Add Button component with variant styles
 
-- Created ActiveUsers component to display avatars of active users in the room.
-- Utilized useMemo hook to memoize the result and optimize performance.
-- Integrated Avatar component to render user avatars.
-- Enhanced user experience by showing a count of additional users when there are more than two.
+- Implemented Button component to handle button functionality with variant styles.
+- Integrated class-variance-authority for managing button variants and sizes.
+- Utilized Slot component for handling buttons as children when needed.
+- Enhanced accessibility and usability with focus styles and transitions.
 
-This commit introduces the ActiveUsers component, which displays avatars of active users in the room. The component utilizes useMemo hook to optimize performance by memoizing the result. Avatars are rendered using the Avatar component, and additional users are indicated by a count when there are more than two users present.
+This commit introduces the Button component, which provides button functionality with support for various styles and sizes. The component leverages class-variance-authority to manage button variants and sizes efficiently. Additionally, the Slot component is utilized for handling buttons as children when required. The Button component enhances accessibility and usability through focus styles and smooth transitions.
 
 "
 # Push changes to the remote repository

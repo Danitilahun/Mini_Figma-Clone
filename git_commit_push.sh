@@ -5,14 +5,13 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Add Button component with variant styles
+feat: Integrate Collapsible components from Radix UI
 
-- Implemented Button component to handle button functionality with variant styles.
-- Integrated class-variance-authority for managing button variants and sizes.
-- Utilized Slot component for handling buttons as children when needed.
-- Enhanced accessibility and usability with focus styles and transitions.
+- Added Collapsible, CollapsibleTrigger, and CollapsibleContent components.
+- Utilized Radix UI's CollapsiblePrimitive for collapsible functionality.
+- Enhanced accessibility and user experience with collapsible sections.
 
-This commit introduces the Button component, which provides button functionality with support for various styles and sizes. The component leverages class-variance-authority to manage button variants and sizes efficiently. Additionally, the Slot component is utilized for handling buttons as children when required. The Button component enhances accessibility and usability through focus styles and smooth transitions.
+This commit introduces Collapsible components integrated from Radix UI, providing collapsible functionality for sections of content. The Collapsible, CollapsibleTrigger, and CollapsibleContent components are added to facilitate collapsible sections. This enhancement improves accessibility and user experience by allowing users to toggle visibility of content sections.
 
 "
 # Push changes to the remote repository

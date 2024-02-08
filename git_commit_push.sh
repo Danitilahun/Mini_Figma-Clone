@@ -5,14 +5,15 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Implement Room component for Liveblocks integration
+feat: Implement Home component with canvas functionality
 
-- Created a Room component for Liveblocks integration.
-- Utilized RoomProvider from liveblocks.config to set up the room with initial presence and storage configurations.
-- Used ClientSideSuspense to handle suspense while loading.
-- Added Loader component as a fallback during suspense.
-
-This commit introduces a Room component to facilitate Liveblocks integration. It sets up the room with initial presence and storage configurations and handles suspense with a Loader component during data fetching.
+- Implemented the Home component with canvas functionality for drawing shapes, handling user interactions, and managing canvas objects.
+- Utilized Liveblocks hooks like useStorage, useUndo, and useRedo for real-time synchronization and undo/redo functionality.
+- Integrated event listeners to handle canvas interactions such as drawing, modifying, moving, and deleting shapes.
+- Included components like Navbar, LeftSidebar, RightSidebar, and Live for user interface and interaction.
+- Ensured proper syncing of canvas objects with Liveblocks storage for real-time collaboration.
+- Implemented functionality for uploading images to the canvas and handling various canvas operations like resizing and zooming.
+- Enabled keyboard shortcuts for actions like undo, redo, and shape deletion.
 
 "
 # Push changes to the remote repository

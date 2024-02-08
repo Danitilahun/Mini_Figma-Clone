@@ -5,14 +5,14 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Implement Avatar component with Tooltip integration
+feat: Implement ActiveUsers component to display active users with avatars
 
-- Created Avatar component to display user avatars with tooltip functionality.
-- Utilized Tooltip, TooltipTrigger, and TooltipContent components from the UI library.
-- Integrated Next.js Image component for optimized image rendering.
-- Enhanced accessibility and user experience with tooltips displaying user names.
+- Created ActiveUsers component to display avatars of active users in the room.
+- Utilized useMemo hook to memoize the result and optimize performance.
+- Integrated Avatar component to render user avatars.
+- Enhanced user experience by showing a count of additional users when there are more than two.
 
-This commit introduces the Avatar component, which combines user avatars with tooltip functionality. The Avatar component utilizes Tooltip, TooltipTrigger, and TooltipContent components from the UI library to enable tooltips on avatar hover. Additionally, the Next.js Image component is employed for optimized image renderin
+This commit introduces the ActiveUsers component, which displays avatars of active users in the room. The component utilizes useMemo hook to optimize performance by memoizing the result. Avatars are rendered using the Avatar component, and additional users are indicated by a count when there are more than two users present.
 
 "
 # Push changes to the remote repository

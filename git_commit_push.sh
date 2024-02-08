@@ -5,12 +5,13 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Add functionality to set cursor state to hidden and display chat cursor
+feat: Add ReactionSelector component for selecting reactions
 
-- Added setCursorState function to change cursor state to hidden.
-- Implemented rendering of chat cursor when cursor is in chat mode.
+- Added ReactionSelector component to allow users to select reactions.
+- Implemented ReactionButton component for rendering individual reaction buttons.
+- Integrated functionality to handle reaction selection.
 
-This commit enhances the Live component by enabling the ability to set the cursor state to hidden and display the chat cursor when necessary.
+This commit introduces the ReactionSelector component, which enables users to select reactions from a list of predefined options. Additionally, ReactionButton components are utilized to display individual reaction buttons, facilitating the selection process.
 
 "
 # Push changes to the remote repository

@@ -95,7 +95,6 @@ const Live = () => {
       <h1 className="text-2xl text-white">LiveBlock figma Clone</h1>
       <LiveCursors others={others} />
 
-      {/* If cursor is in chat mode, show the chat cursor */}
       {cursor && (
         <CursorChat
           cursor={cursor}

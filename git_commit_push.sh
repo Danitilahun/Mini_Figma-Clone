@@ -5,13 +5,14 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Implement Loader component for displaying loading animation
+feat: Implement Navbar component with dynamic navigation elements
 
-- Created Loader component to display a loading animation while content is being loaded.
-- Utilized Next.js Image component to efficiently render the loader image.
-- Styled the component to center align the loader image and display a text indicating the loading process.
+- Created Navbar component to display navigation elements dynamically based on provided data.
+- Utilized Next.js Image component for optimized rendering of images within navigation items.
+- Implemented conditional rendering for submenus and special actions like triggering the NewThread component.
+- Styled the component to maintain consistency with the application's design language.
 
-This commit introduces the Loader component, which enhances the user experience by providing visual feedback during loading operations. It utilizes the Next.js Image component for optimized loading of the loader image and ensures a consistent loading animation across the application.
+This commit introduces the Navbar component, which enhances the user interface by providing dynamic navigation elements. It supports various types of navigation items, including dropdown menus and special actions like triggering comment threads. The component is designed to efficiently render navigation icons and adapt to changes in the active element.
 
 "
 # Push changes to the remote repository

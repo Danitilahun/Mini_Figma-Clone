@@ -5,18 +5,13 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Export components for easier access and organization
+chore: Update Next.js configuration
 
-- Exported LiveCursors component for displaying live cursors.
-- Exported ReactionSelector component for selecting reactions.
-- Exported FlyingReaction component for displaying flying reactions.
-- Exported Navbar component for navigation.
-- Exported LeftSidebar component for the left sidebar functionality.
-- Exported RightSidebar component for the right sidebar functionality.
-- Exported CursorChat component for cursor chat functionality.
-- Exported Live component for live functionality.
+- Added external dependencies 'utf-8-validate', 'bufferutil', and 'canvas' to be bundled as commonjs modules.
+- Configured remote patterns for images to include 'liveblocks.io'.
+- Set TypeScript to ignore build errors for improved development experience.
 
-This commit enhances code organization and modularity by exporting multiple components for easier access and reuse across the application. By centralizing the exports, developers can efficiently manage and import these components wherever needed, promoting code readability and maintainability.
+This commit updates the Next.js configuration to optimize external dependency handling, specify remote patterns for images, and adjust TypeScript settings for better development workflow.
 
 "
 # Push changes to the remote repository

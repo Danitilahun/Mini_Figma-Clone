@@ -5,12 +5,13 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Render reactions in Live component
+feat: Listen for reaction events and update reactions accordingly
 
-- Implemented rendering of reactions using the FlyingReaction component.
-- Added mapping of reaction data to FlyingReaction components based on reaction coordinates and timestamps.
+- Implemented useEventListener hook to listen for reaction events.
+- Added logic to update reactions based on received reaction event data.
+- Updated reaction data with event coordinates, value, and timestamp.
 
-This commit enhances the Live component by rendering reactions using the FlyingReaction component. Reactions are mapped from reaction data, with each reaction being displayed at its specified coordinates and timestamp.
+This commit enhances the Live component by adding a listener for reaction events, enabling the application to react to user-generated reactions in real-time. The useEventListener hook is utilized to capture reaction events, and the reaction data is updated accordingly with event coordinates, value, and timestamp, ensuring synchronized reaction display across users.
 
 "
 # Push changes to the remote repository

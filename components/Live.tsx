@@ -2,10 +2,11 @@ import React, { useCallback, useEffect, useState } from "react";
 import LiveCursors from "./cursor/LiveCursors";
 import {
   useBroadcastEvent,
+  useEventListener,
   useMyPresence,
   useOthers,
 } from "@/liveblocks.config";
-import { CursorMode, CursorState, Reaction } from "@/types/type";
+import { CursorMode, CursorState, Reaction, ReactionEvent } from "@/types/type";
 import CursorChat from "./cursor/CursorChat";
 import ReactionSelector from "./reaction/ReactionButton";
 import FlyingReaction from "./reaction/FlyingReaction";
@@ -68,6 +69,19 @@ const Live = () => {
       });
     }
   }, 100);
+
+  useEventListener((eventData) => {
+    const event = eventData.event as ReactionEvent;
+    setReactions((reactions) =>
+      reactions.concat([
+        {
+          point: { x: event.x, y: event.y },
+          value: event.value,
+          timestamp: Date.now(),
+        },
+      ])
+    );
+  });
 
   // Hide the cursor when the mouse leaves the canvas
   const handlePointerLeave = useCallback(() => {

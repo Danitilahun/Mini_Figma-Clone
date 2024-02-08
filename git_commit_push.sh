@@ -5,13 +5,13 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Implement Dimensions component for width and height input
+feat: Add Export component with PDF export functionality
 
-- Created Dimensions component for inputting width and height values.
-- Integrated Input component for numeric input with validation.
-- Added handlers for input change and blur events to update values and manage editing state.
+- Created Export component for exporting content to PDF format.
+- Integrated Button component for triggering the export action.
+- Implemented exportToPdf function from utils for PDF export functionality.
 
-This commit introduces the Dimensions component, allowing users to input width and height values. It utilizes the Input component for numeric input with minimum value validation. Additionally, handlers for input change and blur events are implemented to update values and manage the editing state.
+This commit introduces the Export component, allowing users to export content to PDF format. It utilizes the Button component to trigger the export action when clicked. The exportToPdf function from utils is integrated to enable PDF export functionality.
 
 "
 # Push changes to the remote repository

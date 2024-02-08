@@ -70,6 +70,13 @@ const Live = () => {
     }
   }, 100);
 
+  // Remove reactions that are not visible anymore (every 1 sec)
+  useInterval(() => {
+    setReactions((reactions) =>
+      reactions.filter((reaction) => reaction.timestamp > Date.now() - 4000)
+    );
+  }, 1000);
+
   useEventListener((eventData) => {
     const event = eventData.event as ReactionEvent;
     setReactions((reactions) =>

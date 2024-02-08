@@ -5,13 +5,14 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Add CSS animations for reaction movement and appearance
+feat: Integrate Tooltip components with Radix UI
 
-- Created CSS animations for reaction movement and appearance.
-- Implemented animation keyframes for reactions to go up, fade out, and move left/right.
-- Defined animation durations, timings, and transformations for smooth visual effects.
+- Added TooltipProvider, Tooltip, TooltipTrigger, and TooltipContent components.
+- Utilized Radix UI's TooltipPrimitive components for tooltip functionality.
+- Implemented custom styles and animations for tooltips.
+- Enhanced accessibility and usability of tooltips.
 
-This commit introduces CSS animations to enhance the visual experience of reactions in the application. Various animation effects, including upward movement, fading out, and left/right movement, are defined through animation keyframes. These animations improve the aesthetics and interactivity of reactions, providing a more engaging user experience.
+This commit introduces Tooltip components integrated with Radix UI, providing tooltip functionality for enhanced user interactions. The TooltipProvider, Tooltip, TooltipTrigger, and TooltipContent components are added to facilitate tooltip usage. Custom styles and animations are applied to improve the visual appearance and behavior of tooltips, ensuring a seamless user experience.
 
 "
 # Push changes to the remote repository

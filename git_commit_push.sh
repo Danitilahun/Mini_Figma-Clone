@@ -5,13 +5,13 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Integrate DropdownMenu components from Radix UI
+feat: Add Input component
 
-- Added DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuCheckboxItem, DropdownMenuRadioItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuGroup, DropdownMenuPortal, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger, and DropdownMenuRadioGroup components.
-- Utilized Radix UI's DropdownMenuPrimitive for dropdown menu functionality.
-- Implemented various dropdown menu items and styles for enhanced user experience.
+- Implemented Input component with customizable props.
+- Utilized React.forwardRef for proper handling of ref forwarding.
+- Styled Input component with consistent design and accessibility features.
 
-This commit introduces DropdownMenu components integrated from Radix UI, providing dropdown menu functionality for user interactions. The components include triggers, content, items, checkboxes, radio buttons, labels, separators, shortcuts, groups, portals, and sub-menus, enhancing the versatility of dropdown menus. Custom styles and interactions are applied to ensure a seamless and intuitive user experience.
+This commit introduces the Input component, allowing users to input text with various configurations such as type, className, and other standard HTML input attributes. The component is designed to be flexible, accessible, and customizable. It is integrated with proper ref forwarding using React.forwardRef for seamless integration with other components. Styling adheres to established design guidelines with consistent border, background, padding, and text styles, ensurin
 
 "
 # Push changes to the remote repository

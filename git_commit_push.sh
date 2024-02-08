@@ -5,14 +5,13 @@ git add .
 
 # Commit changes with the specified commit message
 git commit -m "
-feat: Implement LeftSidebar component for displaying layers
+feat: Implement Loader component for displaying loading animation
 
-- Created LeftSidebar component to display layers with their respective icons and names.
-- Utilized useMemo hook to memoize the rendering of layers, optimizing performance by re-rendering only when there are new shapes.
-- Integrated getShapeInfo function to retrieve shape information such as icon and name.
-- Styled the component to provide a visually appealing and interactive user experience.
+- Created Loader component to display a loading animation while content is being loaded.
+- Utilized Next.js Image component to efficiently render the loader image.
+- Styled the component to center align the loader image and display a text indicating the loading process.
 
-This commit introduces the LeftSidebar component, which enhances the user interface by displaying layers along with their icons and names. It improves performance by efficiently rendering layers and ensures a better user experience in managing layers within the application.
+This commit introduces the Loader component, which enhances the user experience by providing visual feedback during loading operations. It utilizes the Next.js Image component for optimized loading of the loader image and ensures a consistent loading animation across the application.
 
 "
 # Push changes to the remote repository
